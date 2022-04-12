@@ -35,3 +35,11 @@ let counter = 0;
 let array = paraLoren.toLowerCase().split(' ');
 array.forEach(word => {if (word == 'lorem') { counter += 1}});
 console.log(counter);
+
+let phraseToCheck = '"Was it a car or a cat I saw?"';
+let cleanString = phraseToCheck.replace(/\W/g, '').toLowerCase();
+if (cleanString == cleanString.split('').reverse().join('')) {
+    console.log('This is a palindrome!!');
+} else {
+    console.log('Try another phrase because this is not a palindrome')
+}
